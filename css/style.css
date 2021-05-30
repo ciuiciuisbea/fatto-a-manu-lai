@@ -7,38 +7,52 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+:root {
+	--middle-grey: #857e74ff;
+	--lavender-blue: #bbbdf6ff;
+	--rich-black: #061826ff;
+	--flax: #e0d68aff;
+	--eggshell: #faf3ddff;
+	--ivory: #fffdedff;
+	--turquoise-green: #b9e3c6ff;
+	--ocean-green: #59c9a5ff;
+	--tea-green: #cce2a3ff;
+	--aero-blue: #caf7e2ff;
+}
+
 html{
 	font-size: 62.5%;
 }
 
 body{
-	background-color: #fffdedff;
-	color: #061826ff;
+	background-color: var(--ivory);
+	color: var(--rich-black);
 	font-size: 1.2rem;
 }
 
 header{
 	padding: 10px;
-	background-color: #59c9a5ff;
+	background-color: var(--ocean-green);
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .logo{
 	width: 30%;
-	font-size: 3rem;
-	/*float: left;*/
+	margin-left: 40px;
 }
 
 .navigation{
-	width: 40%;
-	/*	float: right;*/
+	width: 40%;/*
+	display: flex;
+	justify-content: flex-end;*/
 }
-
-.relative{position: relative;}
 
 .subNavUno{
 	top:2px;
 	left: -8px;
-	background-color:  #59c9a5ff;
+	background-color:  var(--ocean-green);
 	width: 130px;
 	height: 30px;
 	padding: 15px 10px 10px 25px;
@@ -47,26 +61,26 @@ header{
 .subNavDue{
 	top:2px;
 	left: -8px;
-	background-color:  #59c9a5ff;
+	background-color:  var(--ocean-green);
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
 	width: 130px;
 	height: 30px;
 	padding: 10px 10px 15px 25px;
 }
+
 nav li a {
 	text-decoration: none;
-	color: #061826ff;
+	color: var(--rich-black);
 }
 
 nav li a:hover{
-	color: #faf3ddff;;
+	color: var(--eggshell);
 	border-bottom: 2px solid;
-	font-weight: bold;
 }
 
 nav li li a:hover{
-	color: #faf3ddff;;
+	color: var(--eggshell);
 	border-bottom: none;
 	font-weight: normal;
 }
@@ -77,9 +91,9 @@ nav ul {
 }
 nav li {
 	display: inline-block;
-	width: 25%;
+	width: 33%;
 	position:relative;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	list-style: none;
 }
 nav ul ul {
@@ -97,18 +111,20 @@ main{
 	padding: 10px;
 }
 footer{
-	background-color: #59c9a5ff;
+	background-color: var(--ocean-green);
 	padding: 10px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 footer a{
 	text-decoration: none;
-	color: #061826ff;
+	color: var(--rich-black);
 }
 
 footer a:hover{
-	color: #faf3ddff;
+	color: var(--eggshell);
 }
 footer li{
 	display: inline-block;
@@ -117,32 +133,39 @@ footer li{
 }
 footer li img{
 	height: 20px;
+	cursor: pointer;
 }
 
 /*.contactFooter{
 	
-}
-
-.socialFooter{
-	
 }*/
 
+.socialFooter{
+	margin-right: 40px;
+}
+
 h1{
-	color:#857e74ff;
+	color:var(--middle-grey);
 	font-size: 4rem;
 	letter-spacing: 4px;
 	word-spacing: 7px;
 	line-height: 50px;
 }
 h2{
-	color:#857e74ff;
+	color:var(--middle-grey);
 	font-size: 3rem;
 	letter-spacing: 3px;
 	word-spacing: 6px;
 	line-height: 40px;
 }
+
+h3{
+	color: var(--middle-grey);
+	font-size: 2rem;
+}
+
 p{
-	padding: 20px;
+	padding-top: 10px;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
 	word-spacing: 5px;
@@ -152,42 +175,135 @@ section{
 	padding: 10px;
 }
 .button{
-	background-color: #bbbdf6ff;
+	background-color: var(--lavender-blue);
 	padding: 5px 10px;
-	border: solid 0.5px #857e74ff;
+	border: solid 0.5px var(--middle-grey);
 	border-radius: 5px;
 }
 .linkInterno{
-	color:  #fffdedff;
-	background-color: #857e74ff;
+	color:  var(--ivory);
+	background-color: var(--middle-grey);
 	font-size: 1.5rem;
 	text-decoration: none;
 	padding: 0.8rem;
 	border-radius: 5px;
-	margin-right: 20px;
-}
-
-.rightAlign{
-	text-align: right;
 }
 
 .galleryPictures img{
 	margin: 15px;
 }
+
+.rightAlign{
+	text-align: right;
+}
 /* Estilos de la home */
-/* #home main{
-	background-image: url(../img/portacandela.jpg);
-	background-repeat: no-repeat;
-	background-position: bottom right;
-	background-size: 900px;
-}*/
+
+#home main{
+	margin: 10px 50px;
+	height: 70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#home article{
+	margin: 20px;
+	flex-grow: 2;
+}
+
+/*-- Estilos de Chi sono --*/
+#chiSono main{
+	height: 70vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#chiSono section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img#manu{
+	margin-left: 50px;
+	width: 300px;
+	border-radius: 20%;
+}
+
+#chiSono article{
+	margin: 30px;
+	padding: 10px;
+}
+
+iframe{
+	margin-right: 50px;
+	height: 300px;
+}
+
+
+
 
 /* Estilos de contatto */
+#contatto main{
+	background-image: url(../img/portacandela.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#contatto h1{
+	display: none;
+}
+#contatto h2{
+	padding-bottom: 10px;
+}
 
 #contatto fieldset{
-	width: 400px;
-	margin: 20px;
-	padding: 10px;
+	background-color: var(--ivory);
+	text-align: center;
+	width: 300px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px 20px 10px 20px;
+	border: solid 0.5px var(--ivory);
 	border-radius: 5px;
-	border: solid 0.5px #857e74ff;
+	/*box-shadow: 0 4px 8px 0 var(--middle-grey), 0 6px 20px 0 var(--ivory);*/
+}
+
+
+/*---Estilos de Prodotti---*/
+#prodotti main {
+	padding: 50px;
+}
+
+#prodotti hr{
+	color: var(--middle-grey);
+}
+
+.cardFather{
+	margin: 20px 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+article.cardSon{
+	border: solid 1px var(--middle-grey);
+	box-shadow: 0 4px 8px 0 var(--middle-grey), 0 6px 20px 0 var(--eggshell);
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section#comprare{
+	margin-right: 40px;
+	text-align: right;
+}
+
+div.rightAlign{
+	margin-top: 20px;
+	margin-right: 20px;
 }
