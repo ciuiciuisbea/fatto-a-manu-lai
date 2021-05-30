@@ -1,0 +1,91 @@
+/*  Styles for "Contatto"  */
+#contatto .backgroundImage{
+    margin-top: 85px;
+    padding-top: 10px;
+    background-color: $dim-gray;
+    background-image: url(../img/cemento-portacandela.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.contatto__title{
+    display: none;
+}
+
+@mixin contattoBox{
+    background-color: $dark-green;
+    opacity: .8;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    color: $platinum;
+    font-size: 1.2rem;
+    border: solid 0.5px $dark-green;
+    border-radius: 15px;
+}
+
+.infoContatto{
+    @include contattoBox;
+    padding: 15px;
+    margin-top: 5vh;
+    .infoContatto--link{
+        text-decoration: none;
+        color: $celadon-green
+    }
+    .infoContatto--link:hover{
+        font-style: italic;
+    }
+}
+
+
+.formulario__title{
+	padding-bottom: 5px;
+    color: $platinum;
+}
+
+.formulario{
+    @include contattoBox;    
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+	padding: 10px 20px 10px 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario__campo, .formulario__campo-testo{
+    margin: 6px 0 6px 0;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario__campo:focus, .formulario__campo-testo:focus{
+    transform: scale(1.1);
+    transition: transform .2s;
+    border: none;
+}
+
+.formulario__bottone{
+    text-align: center;
+	background-color: $cambridge-blue;
+	padding: 5px 10px 5px 10px !important;
+    color: $black;
+    font-weight: bold;
+	border: solid 0.5px $dim-gray;
+	border-radius: 5px;
+}
+
+.formulario__bottone{
+	transform: translate(2px, 2px);
+}
+
+@media only screen and (min-width: $md){
+    .info__contatto, .formulario{
+        max-width: 37vw;
+        margin-top: 5vh;
+    }
+}

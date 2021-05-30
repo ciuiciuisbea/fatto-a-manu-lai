@@ -1,0 +1,42 @@
+/*-- Styles for 404 page --*/
+.notFound__background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/cemento-rotto-pianta.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#notFound main{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.errorMessage__box{
+    padding: 40px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 12px;
+    .errorMessage__content{
+        font-size: 1.8rem;
+    }
+    .internalLink{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: $md){
+    .errorMessage__box{
+        margin-top: 7vh;
+        max-width: 40vw;
+    }
+}

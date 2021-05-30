@@ -1,0 +1,83 @@
+/*  Styles for the header  */
+header{
+    background-color: $dim-gray;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.menu{
+    color:$black;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu__logo img{
+    width: 70px;
+}
+
+.menu__logo:hover{
+    transform: rotate(10deg);
+    transition: transform .5s;
+}
+
+a.nav-link.menu__button.menu__button--link{
+    color: $black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding: 1rem;
+}
+
+a.nav-link.menu__button.menu__button--link:hover{
+    color: $platinum;
+    background-size: 100% 2px;
+}
+
+@media only screen and (min-width: $md){
+    .menu__logo{
+        max-width: 70px;
+    }
+}
+
+
+/*  Styles for the footer */
+.footer{
+    width: 100vw;
+    padding: 10px;
+	background-color:  $dim-gray;
+	font-size: 1.2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+    @each $icon in email, telefono, instagram, facebook{
+        .#{$icon}-icon{
+            background-image: url(../img/#{$icon}.svg);
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+    }
+
+    .footer__link{
+        text-decoration: none;
+        color: $black;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .footer__link:hover{
+        transform: rotate(10deg);
+        transition: transform .2s;
+    }
+
+}

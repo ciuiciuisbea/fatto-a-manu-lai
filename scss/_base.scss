@@ -1,0 +1,80 @@
+/*  General styles  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+$dim-gray: #73665eff;
+$platinum: #e6e8e6ff;
+$light-gray: #ced0ceff;
+$black: #000009ff;
+$cambridge-blue: #9fb8adff;
+$celadon-green: #048a81ff;
+$dark-green: #00241bff;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $platinum;
+    color: $black;
+    font-size: 1.2rem;
+}
+
+.frame{
+    padding: 10px;
+    margin-top: 90px;
+    margin-bottom: 10vh;
+}
+
+h1{
+    color: $dark-green;
+	font-size: 3.5rem;
+}
+h2{
+    color:$dark-green;
+	font-size: 2.5rem;
+}
+
+h3{
+    color: $dark-green;
+	font-size: 2rem;
+}
+
+p{
+	font-size: 1.4rem;
+    padding-top: 3px;
+}
+
+section{
+	padding: 10px;
+}
+
+
+.internalLink{
+	color:  $platinum;
+	background-color: $dim-gray;
+	font-size: 1.5rem;
+	text-decoration: none;
+	padding: .8rem;
+    margin-top: 5px;
+	border-radius: 5px;
+    display: inline-block;
+}
+
+.internalLink:hover{
+    color: $platinum;
+    transform: translate(2px, 2px);
+}

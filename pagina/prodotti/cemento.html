@@ -1,25 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="../../img/favicon.ico" />
 
 	<!-- CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/main.css">
 
 	<title>Cemento - Fatto a Manu Cagliari</title>
+	<meta name="description" content="Vasi, lampade, porta oggetti e complementi d'arredo in cemento. Design moderno e sostenibile 100% fatto a 'Manu'.">
+	<meta name="keywords" content="fatto a mano, manufatti, oggetti fatti a mano, vasi, lampade, accessori, cemento, design, creatività, cemento creativo, riciclo, riuso">
 </head>
 
 <body id="cemento">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<!--Empieza menù-->
+		<nav class="navbar navbar-expand-lg navbar-light menu">
 			<div class="container-fluid">
-				<a class="navbar-brand logo" href="../../index.html">
+				<a class="navbar-brand menu__logo" href="../../index.html">
 					<img src="../../img/logo.png" alt="Logo Fatto a Manu Cagliari">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,132 +32,142 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 navP">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu menu__button">
 						<li class="nav-item">
-							<a class="nav-link" href="../../index.html#chiSono">Chi sono</a>
+							<a class="nav-link menu__button menu__button--link" href="../../index.html#chiSono">Chi sono</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="../prodotti.html">Prodotti</a>
-						</li>
+							<a class="nav-link menu__button menu__button--link" href="../prodotti.html">Prodotti</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="../contatto.html">Contatto</a>
+							<a class="nav-link menu__button menu__button--link" href="../contatto.html">Contatto</a>
 						</li>
 
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<!--termina menù-->
 	</header>
-	<div class="container-fluid">
-		<div class="row">
-			<main class="col-lg-8">
-				<h1>Cemento creativo</h1>
-				<p>Riusare un oggetto significa dargli una nuova vita e un nuovo scopo, senza dover scomporre il materiale di cui è fatto. Ci sono tanti modi creativi ed interessanti per riusare gli oggetti della vita quotidiana, io ho scelto di usare il vetro e la plastica per creare oggetti che danno un tocco di colore e personalità alla casa.</p>
-				<ul>
-					<li class="list-group-item">
-						<h4>Bottiglie - il contenitore va oltre il suo contenuto</h4>
-						<div class="hideText">Dopo aver bevuto un buon vino in compagnia, la bottiglia può essere riusata per diventare una lampada colorata, un portacandele romantico o un vaso per delle piantine. </div>
-					</li>
-					<li class="list-group-item">
-						<h4>Tappi - l'unione fa la forza</h4>
-						<div class="hideText">Una composizione di tappi può dare risultati sorprendenti.</div>
-					</li>
-				</ul>
-				<div class="text-center text-lg-end boton">
-					<a href="../prodotti.html#comprare" class="align-middle linkInterno">Come comprare</a>
-				</div>
-			</main>
-			<aside class="col-lg-4 d-flex justify-content-center align-self-center">
-				<a href="riuso.html"><img src="../../img/riuso-vetro-vasi-4.jpeg" alt="vaso in bottiglia">Vai a
-					riuso</a>
-			</aside>
+	<div class="frame">
+		<div class="container-fluid bg-img cementoBackground">
+			<div class="row">
+				<main class="col-lg-8 prodMaterial">
+					<h1>Cemento creativo</h1>
+					<p>Nasce dall’idea di creare degli oggetti originali, di design, accessori e complementi d’arredo.</p>
+					<p>Per la loro realizzazione è necessario realizzare un cassero, uno stampo in cui verrà versato il cemento. Questi vengono realizzati con materiali di recupero, contenitori di plastica, vetro, alluminio.</p>
+					<p>La polvere di cemento viene miscelata con acqua e sabbia sino ad ottenere la giusta consistenza. L’eventuale colorazione avviene direttamente nell’impasto, dando così una colorazione all’intera massa dell’oggetto.</p>
+					<h2 class="prodMaterial__subtitle">I miei “Manu”fatti in cemento:</h2>
+						
+					<ul>
+						<li class="list-group-item prodMaterial__list">
+							<h3 class="list__name--bold">Vasi</h3>
+						</li>
+						<li class="list-group-item prodMaterial__list">
+							<h3 class="list__name--bold">Porta oggetti</h3>
+						</li>
+						<li class="list-group-item prodMaterial__list">
+							<h3 class="list__name--bold">Porta candele</h3>
+						</li>
+						<li class="list-group-item prodMaterial__list">
+							<h3 class="list__name--bold">Lampade</h3>
+						</li>
+					</ul>
+					<p>Dai un'occhiata ad alcune delle mie creazioni in cemento nella galleria qui sotto!</p>
+					<div class="text-center text-lg-end boton">
+						<a href="../prodotti.html#comprare" class="align-middle internalLink">Come comprare</a>
+					</div>
+				</main>
+				<aside class="col-lg-4 d-flex justify-content-center align-self-center">
+					<a href="riuso.html"><img src="../../img/riuso-vetro-vasi-4.jpeg" alt="vaso in bottiglia">Vai a
+						riuso</a>
+				</aside>
+			</div>
 		</div>
+		<hr>
+		<section class="gallery">
+			<h2>Galleria di foto</h2>
+			<div class="gallery__pictures">
+				<img src="../../img/cemento-lampada-1.jpg" alt="lampada squadrata in cemento">
+				<img src="../../img/cemento-lampada-donna.jpg" alt="lampada donna in cemento">
+				<img src="../../img/cemento-orologio.jpg" alt="orologio in cemento">
+				<img src="../../img/cemento-lampade-uomo-donna-2.jpg" alt="coppia lampade in cemento uomo e donna">
+				<img src="../../img/cemento-portapenne.jpg" alt="portapenne in cemento">
+				<img src="../../img/cemento-lampade-uomo-donna.jpg" alt="coppia lampade in cemento uomo e donna">
+				<img src="../../img/cemento-vasi-grigi-regalo-2.jpg" alt="vasetti in cemento grigi nella confezione regalo">
+				<img src="../../img/cemento-vasi-vari-4.jpg" alt="abbinamento di vasetti in cemento">
+				<img src="../../img/cemento-vaso-100handmade.jpg" alt="vaso in cemento 100% handmade">
+				<img src="../../img/cemento-vaso-ricotta.jpg" alt="vaso in cemento con forma di ricotta">
+				<img src="../../img/cemento-vaso-tondo-natale-2.jpg" alt="vaso tondo in cemento per natale">
+				<img src="../../img/cemento-vaso-stella-scuro-2.jpg" alt="vaso in cemento grigio scuro a forma di stella">
+				<img src="../../img/cemento-vaso-rettangolare.jpg" alt="vaso in cemento finitura pietra lavorata">
+				<img src="../../img/cemento-portacandela.jpg" alt="portacandela in cemento">
+				<img src="../../img/cemento-portacandele-2.jpg" alt="piccoli portacandele in cemento">
+				<img src="../../img/cemento-portacandele-5.jpg" alt="portacandele vari in cemento">
+				<img src="../../img/cemento-portacandele.jpg" alt="coppia di portacandele in cemento">
+				<img src="../../img/cemento-portacandele-colorati.jpg" alt="portacandele colorati in cemento">
+				<img src="../../img/cemento-portacandele-3.jpg" alt="vari portacandele in cemento">
+				<img src="../../img/cemento-portacandele-6.jpg" alt="portacandele rettangolare in cemento">
+				<img src="../../img/cemento-portafoto.jpg" alt="portafoto in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-1.jpg" alt="coppia di vasi in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-2.jpg" alt="coppia di vasi in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-3.jpg" alt="coppia di vasi in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-4.jpg" alt="coppia di vasi in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-5.jpg" alt="coppia di vasi in cemento">
+				<img src="../../img/cemento-vasi-accoppiati-natale.jpg" alt="vasi in cemento idea regalo di natale">
+				<img src="../../img/cemento-vasi-accoppiati-natale-2.jpg"
+					alt="idea regalo natalizio coppia di vasi in cemento">
+				<img src="../../img/cemento-vaso-arrotondato.jpg" alt="vaschetta in cemento">
+				<img src="../../img/cemento-vasi-alexa.jpg" alt="vasetti in cemento">
+				<img src="../../img/cemento-vasi-colorati-regalo.jpg"
+					alt="confezione regalo con vasetti in cemento colorati">
+				<img src="../../img/cemento-vasi-grigi-regalo.jpg" alt="vasetti in cemento con confezione regalo">
+				<img src="../../img/cemento-vasi-esagonali-composizione.jpg" alt="un alveare di vasetti in cemento">
+				<img src="../../img/cemento-vasi-quadrati-composizione.jpg" alt="vasetti quadrati in cemento">
+				<img src="../../img/cemento-vasi-vari.jpg" alt="vasi in cemento assortiti">
+				<img src="../../img/cemento-vasi-vari-2.jpg" alt="vasi in cemento">
+				<img src="../../img/cemento-vasi-vari-3.jpg" alt="assortimento di vasi in cemento">
+				<img src="../../img/cemento-vaso-arrotondato-2.jpg" alt="vasetto in cemento a forma di vaschetta">
+				<img src="../../img/cemento-vaso-decorato-1.jpg" alt="vaso cemento">
+				<img src="../../img/cemento-vaso-decorato-2.jpg" alt="vaso in cemento">
+				<img src="../../img/cemento-vaso-esagonale.jpg" alt="vasetto esagonale in cemento">
+				<img src="../../img/cemento-vaso-esagonale-2.jpg" alt="vasetto esagonale in cemento">
+				<img src="../../img/cemento-vaso-esagonale-3.jpg" alt="vasetto esagonale in cemento">
+				<img src="../../img/cemento-vaso-esagonale-4.jpg" alt="vasetto esagonale in cemento">
+				<img src="../../img/cemento-vaso-esagonale-5.jpg" alt="vasetto esagonale in cemento">
+				<img src="../../img/cemento-vaso-esagonale-bianco.jpg" alt="vasetto esagonale bianco in cemento">
+				<img src="../../img/cemento-vaso-esagonale-giallo.jpg" alt="vasetto esagonale giallo chiaro in cemento">
+				<img src="../../img/cemento-vaso-esagonale-giallo-2.jpg" alt="vasetto esagonale giallo scuro in cemento">
+				<img src="../../img/cemento-vaso-esagonale-rosa.jpg" alt="vasetto esagonale rosa chiaro in cemento">
+				<img src="../../img/cemento-vaso-esagonale-rosa-2.jpg" alt="vasetto esagonale rosa scuro in cemento">
+				<img src="../../img/cemento-vaso-esagonale-rosa-3.jpg" alt="vasetto esagonale rosa in cemento">
+				<img src="../../img/cemento-vaso-piramide.jpg" alt="vaso in cemento con forma di piramide rovesciata">
+				<img src="../../img/cemento-vaso-quadrato.jpg" alt="vasetto quadrato grigio chiaro in cemento">
+				<img src="../../img/cemento-vaso-quadrato-2.jpg" alt="vasetto quadrato rosa in cemento">
+				<img src="../../img/cemento-vaso-quadrato-3.jpg" alt="vasetto quadrato grigio scuro in cemento">
+				<img src="../../img/cemento-vaso-quadrato-arrotondato.jpg"
+					alt="vaso quadrato in cemento con bordi arrotondati">
+				<img src="../../img/cemento-vaso-rialzato-1.jpg" alt="vaso in cemento con appoggio in metallo">
+				<img src="../../img/cemento-vaso-rialzato-2.jpg" alt="vaso in cemento con appoggio in metallo">
+				<img src="../../img/cemento-vaso-stella.jpg" alt="vaso in cemento a forma di stella">
+				<img src="../../img/cemento-vaso-stella-2.jpg" alt="vaso in cemento a forma di stella">
+				<img src="../../img/cemento-vaso-stella-3.jpg" alt="vaso in cemento a forma di stella">
+				<img src="../../img/cemento-vaso-stella-4.jpg" alt="vaso in cemento a forma di stella">
+				<img src="../../img/cemento-vaso-stella-rosa.jpg" alt="vaso in cemento rosa a forma di stella">
+				<img src="../../img/cemento-vaso-stella-scuro.jpg" alt="vaso in cemento scuro a forma di stella">
+				<img src="../../img/cemento-vaso-tondo-2.jpg" alt="vaso tondo in cemento">
+				<img src="../../img/cemento-vaso-tondo-3.jpg" alt="vaso tondo in cemento">
+				<img src="../../img/cemento-vaso-tondo-natale.jpg" alt="vaso tondo in cemento con stella di natale">
+				<img src="../../img/cemento-vaso-tondo-natale-3.jpg" alt="vaso tondo in cemento con stella di natale">
+				<img src="../../img/cemento-vaso-tondo.jpg" alt="vaso tondo in cemento">
+			</div>
+		</section>
 	</div>
-	<hr>
-	<section class="galleria">
-		<h2>Galleria di foto</h2>
-		<div class="galleryPictures">
-			<img src="../../img/cemento-lampada-1.jpg" alt="lampada squadrata in cemento">
-			<img src="../../img/cemento-lampada-donna.jpg" alt="lampada donna in cemento">
-			<img src="../../img/cemento-orologio.jpg" alt="orologio in cemento">
-			<img src="../../img/cemento-lampade-uomo-donna-2.jpg" alt="coppia lampade in cemento uomo e donna">
-			<img src="../../img/cemento-portapenne.jpg" alt="portapenne in cemento">
-			<img src="../../img/cemento-lampade-uomo-donna.jpg" alt="coppia lampade in cemento uomo e donna">
-			<img src="../../img/cemento-vasi-grigi-regalo-2.jpg" alt="vasetti in cemento grigi nella confezione regalo">
-			<img src="../../img/cemento-vasi-vari-4.jpg" alt="abbinamento di vasetti in cemento">
-			<img src="../../img/cemento-vaso-100handmade.jpg" alt="vaso in cemento 100% handmade">
-			<img src="../../img/cemento-vaso-ricotta.jpg" alt="vaso in cemento con forma di ricotta">
-			<img src="../../img/cemento-vaso-tondo-natale-2.jpg" alt="vaso tondo in cemento per natale">
-			<img src="../../img/cemento-vaso-stella-scuro-2.jpg" alt="vaso in cemento grigio scuro a forma di stella">
-			<img src="../../img/cemento-vaso-rettangolare.jpg" alt="vaso in cemento finitura pietra lavorata">
-			<img src="../../img/cemento-portacandela.jpg" alt="portacandela in cemento">
-			<img src="../../img/cemento-portacandele-2.jpg" alt="piccoli portacandele in cemento">
-			<img src="../../img/cemento-portacandele-5.jpg" alt="portacandele vari in cemento">
-			<img src="../../img/cemento-portacandele.jpg" alt="coppia di portacandele in cemento">
-			<img src="../../img/cemento-portacandele-colorati.jpg" alt="portacandele colorati in cemento">
-			<img src="../../img/cemento-portacandele-3.jpg" alt="vari portacandele in cemento">
-			<img src="../../img/cemento-portacandele-6.jpg" alt="portacandele rettangolare in cemento">
-			<img src="../../img/cemento-portafoto.jpg" alt="portafoto in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-1.jpg" alt="coppia di vasi in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-2.jpg" alt="coppia di vasi in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-3.jpg" alt="coppia di vasi in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-4.jpg" alt="coppia di vasi in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-5.jpg" alt="coppia di vasi in cemento">
-			<img src="../../img/cemento-vasi-accoppiati-natale.jpg" alt="vasi in cemento idea regalo di natale">
-			<img src="../../img/cemento-vasi-accoppiati-natale-2.jpg"
-				alt="idea regalo natalizio coppia di vasi in cemento">
-			<img src="../../img/cemento-vaso-arrotondato.jpg" alt="vaschetta in cemento">
-			<img src="../../img/cemento-vasi-alexa.jpg" alt="vasetti in cemento">
-			<img src="../../img/cemento-vasi-colorati-regalo.jpg"
-				alt="confezione regalo con vasetti in cemento colorati">
-			<img src="../../img/cemento-vasi-grigi-regalo.jpg" alt="vasetti in cemento con confezione regalo">
-			<img src="../../img/cemento-vasi-esagonali-composizione.jpg" alt="un alveare di vasetti in cemento">
-			<img src="../../img/cemento-vasi-quadrati-composizione.jpg" alt="vasetti quadrati in cemento">
-			<img src="../../img/cemento-vasi-vari.jpg" alt="vasi in cemento assortiti">
-			<img src="../../img/cemento-vasi-vari-2.jpg" alt="vasi in cemento">
-			<img src="../../img/cemento-vasi-vari-3.jpg" alt="assortimento di vasi in cemento">
-			<img src="../../img/cemento-vaso-arrotondato-2.jpg" alt="vasetto in cemento a forma di vaschetta">
-			<img src="../../img/cemento-vaso-decorato-1.jpg" alt="vaso cemento">
-			<img src="../../img/cemento-vaso-decorato-2.jpg" alt="vaso in cemento">
-			<img src="../../img/cemento-vaso-esagonale.jpg" alt="vasetto esagonale in cemento">
-			<img src="../../img/cemento-vaso-esagonale-2.jpg" alt="vasetto esagonale in cemento">
-			<img src="../../img/cemento-vaso-esagonale-3.jpg" alt="vasetto esagonale in cemento">
-			<img src="../../img/cemento-vaso-esagonale-4.jpg" alt="vasetto esagonale in cemento">
-			<img src="../../img/cemento-vaso-esagonale-5.jpg" alt="vasetto esagonale in cemento">
-			<img src="../../img/cemento-vaso-esagonale-bianco.jpg" alt="vasetto esagonale bianco in cemento">
-			<img src="../../img/cemento-vaso-esagonale-giallo.jpg" alt="vasetto esagonale giallo chiaro in cemento">
-			<img src="../../img/cemento-vaso-esagonale-giallo-2.jpg" alt="vasetto esagonale giallo scuro in cemento">
-			<img src="../../img/cemento-vaso-esagonale-rosa.jpg" alt="vasetto esagonale rosa chiaro in cemento">
-			<img src="../../img/cemento-vaso-esagonale-rosa-2.jpg" alt="vasetto esagonale rosa scuro in cemento">
-			<img src="../../img/cemento-vaso-esagonale-rosa-3.jpg" alt="vasetto esagonale rosa in cemento">
-			<img src="../../img/cemento-vaso-piramide.jpg" alt="vaso in cemento con forma di piramide rovesciata">
-			<img src="../../img/cemento-vaso-quadrato.jpg" alt="vasetto quadrato grigio chiaro in cemento">
-			<img src="../../img/cemento-vaso-quadrato-2.jpg" alt="vasetto quadrato rosa in cemento">
-			<img src="../../img/cemento-vaso-quadrato-3.jpg" alt="vasetto quadrato grigio scuro in cemento">
-			<img src="../../img/cemento-vaso-quadrato-arrotondato.jpg"
-				alt="vaso quadrato in cemento con bordi arrotondati">
-			<img src="../../img/cemento-vaso-rialzato-1.jpg" alt="vaso in cemento con appoggio in metallo">
-			<img src="../../img/cemento-vaso-rialzato-2.jpg" alt="vaso in cemento con appoggio in metallo">
-			<img src="../../img/cemento-vaso-stella.jpg" alt="vaso in cemento a forma di stella">
-			<img src="../../img/cemento-vaso-stella-2.jpg" alt="vaso in cemento a forma di stella">
-			<img src="../../img/cemento-vaso-stella-3.jpg" alt="vaso in cemento a forma di stella">
-			<img src="../../img/cemento-vaso-stella-4.jpg" alt="vaso in cemento a forma di stella">
-			<img src="../../img/cemento-vaso-stella-rosa.jpg" alt="vaso in cemento rosa a forma di stella">
-			<img src="../../img/cemento-vaso-stella-scuro.jpg" alt="vaso in cemento scuro a forma di stella">
-			<img src="../../img/cemento-vaso-tondo-2.jpg" alt="vaso tondo in cemento">
-			<img src="../../img/cemento-vaso-tondo-3.jpg" alt="vaso tondo in cemento">
-			<img src="../../img/cemento-vaso-tondo-natale.jpg" alt="vaso tondo in cemento con stella di natale">
-			<img src="../../img/cemento-vaso-tondo-natale-3.jpg" alt="vaso tondo in cemento con stella di natale">
-			<img src="../../img/cemento-vaso-tondo.jpg" alt="vaso tondo in cemento">
-		</div>
-	</section>
-	<footer>
-		<a href="mailto: fattoamanucagliari@gmail.com"><img src="../../img/email-1.svg" /></a>
-		<a href="tel:+3933311508423"><img src="../../img/phone-1.svg" /></a>
-		<a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img
-				src="../../img/instagram-1.svg" /></a>
-		<a href="https://www.facebook.com/fattoamanuriciclo" target="_blank"><img src="../../img/facebook-1.svg" /></a>
+	<footer class="footer">
+		<a href="mailto:fattoamanucagliari@gmail.com" class="email-icon footer__link"></a>
+		<a href="tel:+3933311508423" class="telefono-icon footer__link"></a>
+		<a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank" class="instagram-icon footer__link"></a>
+		<a href="https://www.facebook.com/fattoamanuriciclo" target="_blank" class="facebook-icon footer__link"></a>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
 		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">

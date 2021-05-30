@@ -1,0 +1,57 @@
+/*  Styles for the home page  */
+
+#home main{
+    margin: 20px 50px 0px 50px;
+}
+
+#home h1{
+    font-family: 'Julee', cursive;
+}
+
+.materiali__article{
+    padding-top: 20px;
+}
+
+.materiali .accordion-item{
+    background-color: $platinum;
+}
+
+.accordion-button{
+    background-color: $cambridge-blue;
+    color: $black;
+    font-size: 1.5rem;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: $cambridge-blue;
+    color: $black;
+    font-size: 1.5rem;
+}
+
+.sonoManu__article{
+    padding-bottom: 20px;
+    .sonoManu__article--handwritten{
+        font-family: 'Julee', cursive;
+        padding-bottom: 0;
+    }
+}
+
+.sonoManu__img{
+    .sonoManu__img--rounded-border{
+        border-radius: .3rem;
+    }
+}
+
+@media only screen and (min-width:$md){
+    .materiali__article{
+        padding-top: 0;
+    }
+    
+    .sonoManu__article{
+        padding-bottom: 0;
+    }
+}
