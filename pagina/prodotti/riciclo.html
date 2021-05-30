@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/style.css">
 	<title>Riciclo - Fatto a Manu Cagliari</title>
 </head>
-<body>
+<body id="riciclo">
 	<header>
-		<div><a href="../../index.html">Fatto a Manu Cagliari</a><!-- este sería el logo, al que añadiré también su imagen --></div>
+		<div class="menuNav"><a href="../../index.html"><img src="../../img/logo.png" alt="logo fatto a manu cagliari" width="70px">Fatto a Manu Cagliari</a></div>
 		<nav>
 			<ul>
-				<li><a href="../chi-sono.html">Chi sono</a></li>
-				<li><a href="../prodotti.html">Prodotti</a></li>
+				<li class="menuNav"><a href="../chi-sono.html">Chi sono</a></li>
+				<li class="menuNav"><a href="../prodotti.html">Prodotti</a>
 					<ul>
-						<li><a href="cemento.html">Cemento</a></li>
-						<li><a href="riciclo.html">Riciclo</a></li>
+						<li class="menuNav"><a href="cemento.html">Cemento</a></li>
+						<li class="menuNav"><a href="riciclo.html">Riciclo</a></li>
 					</ul>
-				<li><a href="../contatto.html">Contatto</a></li>
+				</li>
+				<li class="menuNav"><a href="../contatto.html">Contatto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,22 +30,27 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<!--Aqui va un texto descriptivo --></p>
-		<a href="../prodotti.html#comprare">Come comprare</a>
+		<div class="rightAlign"><a href="../prodotti.html#comprare" class="linkInterno">Come comprare</a></div>
 	</main>
 	<section>
 		<article>
-			<h2>Orologi</h2>
-			<div><img src="#1" alt="orologio 1"><img src="#2" alt="orologio 2"><!-- poner aqui las imagenes de los productos de esta sección --></div>
+			<hr>
+			<h2>Vetro</h2>
+			<div class="galleryPictures"><img src="../../img/bottiglia-1.jpeg" alt="bottiglia porta-candela" width="150px">   <img src="../../img/bottiglia-vaso.jpeg" alt="bottiglia vaso" width="150px"><!-- esta va a ser una galería de imagenes de los productos, cuando se hace click sobre una foto se abre en modal la foto con su detalle --></div>
 		</article>
 		<article>
-			<h2>Lampade</h2>
-			<div><img src="#1" alt="lampada 1"><img src="#2" alt="lampada 2"><!-- poner aqui las imagenes de los productos de esta sección --></div>
+			<hr>
+			<h2>Plastica</h2>
+			<div class="galleryPictures"><img src="../../img/lampada-tappi-verde.jpeg" alt="lampada tappi verde" width="150px"><img src="../../img/lampada-tappi-blu.jpeg" alt="lampada tappi blu" width="150px"><!-- esta va a ser una galería de imagenes de los productos, cuando se hace click sobre una foto se abre en modal la foto con su detalle --></div>
 		</article>
 	</section>
 	<footer>
-		<a href="mailto: fattoamanucagliari@gmail.com">fattoamanucagliari@gmail.com</a>
-		<a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img src="#" alt="logo-instagram"></a>
-		<a href="https://www.facebook.com/fattoamanuriciclo"><img src="#" alt="logo-facebook"></a>
+		<ul>
+			<li><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTM3MS40OTYsNDg1LjUyQzMyNy4zNiw1MDUuMzg0LDI4OS4xMDQsNTEyLDIzNi44NzIsNTEyQzExNC43Niw1MTIsNy4zNTIsNDI0LjQ1Niw3LjM1MiwyODAuMjgNCglDNy4zNTIsMTMwLjIwOCwxMTYuMjI0LDAsMjgyLjQ4OCwwYzEyOS40NzIsMCwyMjIuMTYsODkuMDE2LDIyMi4xNiwyMTIuNmMwLDEwNy40LTYwLjMyLDE3NS4wOC0xMzkuNzY4LDE3NS4wOA0KCWMtMzQuNTc2LDAtNTkuNTg0LTE3LjY1Ni02My4yNjQtNTYuNjQ4aC0xLjQ3MmMtMjIuOCwzNy41Mi01NS45MDQsNTYuNjQ4LTk0Ljg5Niw1Ni42NDhjLTQ3LjgxNiwwLTgyLjM5Mi0zNS4zMTItODIuMzkyLTk1LjY0DQoJYzAtODkuNzQ0LDY2LjIwOC0xNzEuNCwxNzIuMTM2LTE3MS40YzMyLjM2OCwwLDY5LjE0NCw4LjA5Niw4Ny41NDQsMTguMzkybC0yMi4wNjQsMTM2LjA5Ng0KCWMtNy4zNTIsNDMuMzkyLTIuMjA4LDYzLjI2NCwxOC4zOTIsNjMuOTkyYzMxLjYzMiwwLjczNiw3MS4zNTItMzkuNzI4LDcxLjM1Mi0xMjQuMzJjMC05NS42MzItNjEuNzkyLTE2OS45MzYtMTc1LjgyNC0xNjkuOTM2DQoJYy0xMTIuNTQ0LDAtMjExLjEyOCw4OC4yOC0yMTEuMTI4LDIyOC43ODRjMCwxMjIuODQ4LDc4LjcxMiwxOTIuNzM2LDE4OC4zMjgsMTkyLjczNmMzNy41MiwwLDc3LjI0OC04LjA4OCwxMDYuNjY0LTIzLjU0NA0KCUwzNzEuNDk2LDQ4NS41MnogTTMwNi4wMjQsMTgxLjcwNGMtNS44ODgtMS40NzItMTMuMjQ4LTIuOTQ0LTIyLjgwOC0yLjk0NGMtNDguNTQ0LDAtODYuODA4LDQ3LjgxNi04Ni44MDgsMTA0LjQ1Ng0KCWMwLDI3Ljk1MiwxMi41MTIsNDUuNjA4LDM2Ljc4NCw0NS42MDhjMjcuMjE2LDAsNTUuOTEyLTM0LjU3Niw2Mi41MjgtNzcuMjRMMzA2LjAyNCwxODEuNzA0eiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /><a href="mailto: fattoamanucagliari@gmail.com"> fattoamanucagliari@gmail.com</a></li>
+			<li><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyLjAyMSA1MTIuMDIxIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi4wMjEgNTEyLjAyMSIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Zz48cGF0aCBkPSJtMzY3Ljk4OCA1MTIuMDIxYy0xNi41MjggMC0zMi45MTYtMi45MjItNDguOTQxLTguNzQ0LTcwLjU5OC0yNS42NDYtMTM2LjEyOC02Ny40MTYtMTg5LjUwOC0xMjAuNzk1cy05NS4xNS0xMTguOTEtMTIwLjc5NS0xODkuNTA4Yy04LjI0MS0yMi42ODgtMTAuNjczLTQ2LjEwOC03LjIyNi02OS42MTIgMy4yMjktMjIuMDE2IDExLjc1Ny00My4zODkgMjQuNjYzLTYxLjgwOSAxMi45NjMtMTguNTAxIDMwLjI0NS0zMy44ODkgNDkuOTc3LTQ0LjUgMjEuMDQyLTExLjMxNSA0NC4wMDktMTcuMDUzIDY4LjI2NS0xNy4wNTMgNy41NDQgMCAxNC4wNjQgNS4yNzEgMTUuNjQ1IDEyLjY0N2wyNS4xMTQgMTE3LjE5OWMxLjEzNyA1LjMwNy0uNDk0IDEwLjgyOS00LjMzMSAxNC42NjdsLTQyLjkxMyA0Mi45MTJjNDAuNDgyIDgwLjQ4NiAxMDYuMTcgMTQ2LjE3NCAxODYuNjU2IDE4Ni42NTZsNDIuOTEyLTQyLjkxM2MzLjgzOC0zLjgzNyA5LjM2MS01LjQ2NiAxNC42NjctNC4zMzFsMTE3LjE5OSAyNS4xMTRjNy4zNzcgMS41ODEgMTIuNjQ3IDguMTAxIDEyLjY0NyAxNS42NDUgMCAyNC4yNTYtNS43MzggNDcuMjI0LTE3LjA1NCA2OC4yNjYtMTAuNjExIDE5LjczMi0yNS45OTkgMzcuMDE0LTQ0LjUgNDkuOTc3LTE4LjQxOSAxMi45MDYtMzkuNzkyIDIxLjQzNC02MS44MDkgMjQuNjYzLTYuODk5IDEuMDEzLTEzLjc5NyAxLjUxOC0yMC42NjggMS41MTl6bS0yMzYuMzQ5LTQ3OS4zMjFjLTMxLjk5NSAzLjUzMi02MC4zOTMgMjAuMzAyLTc5LjI1MSA0Ny4yMTctMjEuMjA2IDMwLjI2NS0yNi4xNTEgNjcuNDktMTMuNTY3IDEwMi4xMzIgNDkuMzA0IDEzNS43MjYgMTU1LjQyNSAyNDEuODQ3IDI5MS4xNTEgMjkxLjE1MSAzNC42NDEgMTIuNTg0IDcxLjg2NiA3LjY0IDEwMi4xMzItMTMuNTY3IDI2LjkxNS0xOC44NTggNDMuNjg1LTQ3LjI1NiA0Ny4yMTctNzkuMjUxbC05NS4zNDEtMjAuNDMtNDQuODE2IDQ0LjgxNmMtNC43NjkgNC43NjktMTIuMDE1IDYuMDM2LTE4LjExNyAzLjE2OC05NS4xOS00NC43Mi0xNzIuMjQyLTEyMS43NzItMjE2Ljk2Mi0yMTYuOTYyLTIuODY3LTYuMTAzLTEuNjAxLTEzLjM0OSAzLjE2OC0xOC4xMTdsNDQuODE2LTQ0LjgxNnoiLz48L2c+PC9zdmc+" /><a href="tel:+3933311508423"> 33311508423</a></li>
+			<li><a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIC0xLjk4MiAtMS44NDQgMCAtMTMyLjUyMiAtNTEuMDc3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMzcuMTA2IiB4Mj0iLTI2LjU1NSIgeTE9Ii03Mi43MDUiIHkyPSItODQuMDQ3Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1NDNlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzN2FiIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMS41IDEuNjMzYy0xLjg4NiAxLjk1OS0xLjUgNC4wNC0xLjUgMTAuMzYyIDAgNS4yNS0uOTE2IDEwLjUxMyAzLjg3OCAxMS43NTIgMS40OTcuMzg1IDE0Ljc2MS4zODUgMTYuMjU2LS4wMDIgMS45OTYtLjUxNSAzLjYyLTIuMTM0IDMuODQyLTQuOTU3LjAzMS0uMzk0LjAzMS0xMy4xODUtLjAwMS0xMy41ODctLjIzNi0zLjAwNy0yLjA4Ny00Ljc0LTQuNTI2LTUuMDkxLS41NTktLjA4MS0uNjcxLS4xMDUtMy41MzktLjExLTEwLjE3My4wMDUtMTIuNDAzLS40NDgtMTQuNDEgMS42MzN6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjxwYXRoIGQ9Im0xMS45OTggMy4xMzljLTMuNjMxIDAtNy4wNzktLjMyMy04LjM5NiAzLjA1Ny0uNTQ0IDEuMzk2LS40NjUgMy4yMDktLjQ2NSA1LjgwNSAwIDIuMjc4LS4wNzMgNC40MTkuNDY1IDUuODA0IDEuMzE0IDMuMzgyIDQuNzkgMy4wNTggOC4zOTQgMy4wNTggMy40NzcgMCA3LjA2Mi4zNjIgOC4zOTUtMy4wNTguNTQ1LTEuNDEuNDY1LTMuMTk2LjQ2NS01LjgwNCAwLTMuNDYyLjE5MS01LjY5Ny0xLjQ4OC03LjM3NS0xLjctMS43LTMuOTk5LTEuNDg3LTcuMzc0LTEuNDg3em0tLjc5NCAxLjU5N2M3LjU3NC0uMDEyIDguNTM4LS44NTQgOC4wMDYgMTAuODQzLS4xODkgNC4xMzctMy4zMzkgMy42ODMtNy4yMTEgMy42ODMtNy4wNiAwLTcuMjYzLS4yMDItNy4yNjMtNy4yNjUgMC03LjE0NS41Ni03LjI1NyA2LjQ2OC03LjI2M3ptNS41MjQgMS40NzFjLS41ODcgMC0xLjA2My40NzYtMS4wNjMgMS4wNjNzLjQ3NiAxLjA2MyAxLjA2MyAxLjA2MyAxLjA2My0uNDc2IDEuMDYzLTEuMDYzLS40NzYtMS4wNjMtMS4wNjMtMS4wNjN6bS00LjczIDEuMjQzYy0yLjUxMyAwLTQuNTUgMi4wMzgtNC41NSA0LjU1MXMyLjAzNyA0LjU1IDQuNTUgNC41NSA0LjU0OS0yLjAzNyA0LjU0OS00LjU1LTIuMDM2LTQuNTUxLTQuNTQ5LTQuNTUxem0wIDEuNTk3YzMuOTA1IDAgMy45MSA1LjkwOCAwIDUuOTA4LTMuOTA0IDAtMy45MS01LjkwOCAwLTUuOTA4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" /></a></li>	
+			<li><a href="https://www.facebook.com/fattoamanuriciclo" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuOTk3IDMuOTg1aDIuMTkxdi0zLjgxNmMtLjM3OC0uMDUyLTEuNjc4LS4xNjktMy4xOTItLjE2OS02LjkzMiAwLTUuMDQ2IDcuODUtNS4zMjIgOWgtMy40ODd2NC4yNjZoMy40ODZ2MTAuNzM0aDQuMjc0di0xMC43MzNoMy4zNDVsLjUzMS00LjI2NmgtMy44NzdjLjE4OC0yLjgyNC0uNzYxLTUuMDE2IDIuMDUxLTUuMDE2eiIgZmlsbD0iIzNiNTk5OSIvPjwvc3ZnPg==" /></a></li>	
+		</ul>
 	</footer>
 </body>
 </html>
