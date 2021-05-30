@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contatto</title>
+</head>
+<body>
+	<header>
+		<div><a href="../index.html">Fatto a Manu Cagliari</a><!-- este sería el logo, al que añadiré también su imagen --></div>
+		<nav>
+			<ul>
+				<li><a href="chi-sono.html">Chi sono</a></li>
+				<li><a href="prodotti.html">Prodotti</a></li>
+					<ul>
+						<li><a href="prodotti/cemento.html">Cemento</a></li>
+						<li><a href="prodotti/riciclo.html">Riciclo</a></li>
+					</ul>
+				<li><a href="contatto.html">Contatto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Contatto</h1>
+	<form action="#" method="post">
+		<fieldset>
+			<input type="text" name="nome" placeholder="Nome">
+			<br>
+			<input type="text" name="cognome" placeholder="Cognome">
+			<br>
+			<input type="email" name="email" placeholder="Indirizzo email">
+			<br><br>
+			<label for="domanda">Come hai conosciuto Fatto a Manu Cagliari?</label>
+			<br>
+			<select name="domanda">
+				<option value="amici">Amici</option>
+				<option value="facebook">Facebook</option>
+				<option value="instagram">Instagram</option>
+				<option value="google">Google</option>
+				<option value="altro">Altro</option>
+			</select>
+			<br><br>
+			<label for="prodotti">Quali prodotti ti interessano?</label>
+			<br>
+			<label for="cemento">Cemento</label>
+			<input type="checkbox" name="cemento" value="cemento">
+			<label for="riciclo">Riciclo</label>
+			<input type="checkbox" name="riciclo" value="riciclo">
+			<br><br>
+			<label for="commenti">Lascia un commento</label>
+			<br>
+			<textarea name="commenti" id="commenti" cols="30" rows="10"></textarea>
+			<br><br>
+			<input type="reset" value="Cancella">
+			<input type="submit" value="Conferma">
+		</fieldset>
+	</form>
+	<hr>
+	<!-- Toda la siguiente sección con la tabla es solo para el desafío, en la página real de este sitio web no estará -->
+	<section>
+		<h2>Punti vendita</h2>
+		<table border="5px" cellpadding="5px" cellspacing="5px">
+			<tr>
+				<th>Negozio</th>
+				<th>Indirizzo</th>
+				<th>Prodotti</th>
+			</tr>
+			<tr>
+				<td>Mi invento un nome</td>
+				<td>Via le dita dal naso 1, Cagliari</td>
+				<td>
+					<ul>
+						<li>Vasi</li>
+						<li>Lampade</li>
+						<li>Orologi</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>E questo è un altro</td>
+				<td>Via col vento 21, Cagliari</td>
+				<td>
+					<ol>
+						<li>Vasi</li>
+						<li>Orologi</li>
+					</ol>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<hr>
+	<footer>
+		<a href="mailto: fattoamanucagliari@gmail.com">fattoamanucagliari@gmail.com</a>
+		<a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img src="#" alt="logo-instagram"></a>
+		<a href="https://www.facebook.com/fattoamanuriciclo"><img src="#" alt="logo-facebook"></a>
+	</footer>
+</body>
+</html>
