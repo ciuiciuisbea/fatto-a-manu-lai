@@ -1,43 +1,184 @@
-<!DOCTYPE html>
-<html lang="it">
+<!doctype html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+
+	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+
 	<title>Fatto a Manu Cagliari</title>
 </head>
+
 <body id="home">
 	<header>
-		<div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo fatto a manu cagliari" width="70px"></a></div>
-		<nav class="navigation">
-			<ul>
-				<li><a href="pagina/chi-sono.html">Chi sono</a></li>
-				<li><a href="pagina/prodotti.html">Prodotti</a>
-					<ul>
-						<li class="subNavUno"><a href="pagina/prodotti/cemento.html">Cemento</a></li>
-						<li class="subNavDue"><a href="pagina/prodotti/riciclo.html">Riciclo</a></li>
+		<!--Empieza menù-->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand logo" href="index.html">
+					<img src="img/logo.png" alt="Logo Fatto a Manu Cagliari">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 navP">
+						<li class="nav-item">
+							<a class="nav-link" href="#chiSono">Chi sono</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pagina/prodotti.html">Prodotti</a>
+						</li>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pagina/contatto.html">Contatto</a>
+						</li>
+
 					</ul>
-				</li>
-				<li><a href="pagina/contatto.html">Contatto</a></li>
-			</ul>
+				</div>
+			</div>
 		</nav>
+		<!--termina menù-->
 	</header>
-	<main  class="homeBackground">
-		<img src="img/dettaglio.jpg" alt="vaso fatto a manu" width="300px">
-		<article>
-			<h1>L'arte del riciclo</h1>
-			<p><em>Lorem ipsum dolor</em> sit amet consectetur adipisicing elit. Ipsam praesentium possimus illo similique vero nemo, necessitatibus voluptatibus sed, id, iusto earum ipsum dignissimos excepturi esse repellendus facilis laboriosam cupiditate repellat. <!-- Aqui va un texto descriptivo sobre el producto--></p>
-		</article>
+	<main class="homeBackground">
+		<section class="container-fluid">
+			<div class="row">
+				<article>
+					<h1>Fatto a Manu</h1>
+					<p>Fatto a Manu è un'idea creativa nata con l'obiettivo di dare nuova vita a oggetti che hanno terminato il loro scopo originario e che possono essere riusati con altre finalità. </p>
+				</article>
+			</div>
+		</section>
+		<section class="container-fluid materiali">
+			<div class="row">
+				<!--empieza carousel-->
+				<div id="carouselExampleIndicators" class="carousel slide col-md-4 align-self-center" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+							aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/dettaglio-etichetta.jpg" class="d-block w-100" alt="dettaglio etichetta fatto a manu">
+						</div>
+						<div class="carousel-item">
+							<img src="img/dettaglio-3.jpg" class="d-block w-100" alt="dettaglio vaso in cemento">
+						</div>
+						<div class="carousel-item">
+							<img src="img/dettaglio-plastica.jpg" class="d-block w-100" alt="lampada in tappi di plastica">
+						</div>
+						<div class="carousel-item">
+							<img src="img/dettaglio-vetro.jpg" class="d-block w-100" alt="bottiglie di vetro tagliate">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!--termina carousel-->
+				<article class="col-md-8 align-self-center">
+					<h2>I materiali che uso</h2>
+					<!--empieza accordion-->
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h3 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseOne" aria-expanded="false"
+									aria-controls="flush-collapseOne">
+									Cemento
+								</button>
+							</h3>
+							<div id="flush-collapseOne" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Il cemento ha la doppia qualità di essere molto duro e resistente, ma anche estremamente modellabile, dando la possibilità di creare migliaia di forme diverse per le quali l'unico limite è l'immaginazione.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h3 class="accordion-header" id="flush-headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseTwo" aria-expanded="false"
+									aria-controls="flush-collapseTwo">
+									Vetro
+								</button>
+							</h3>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to
+									demonstrate the <code>.accordion-flush</code> class. This is the second item's
+									accordion body. Let's imagine this being filled with some actual content.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h3 class="accordion-header" id="flush-headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseThree" aria-expanded="false"
+									aria-controls="flush-collapseThree">
+									Plastica
+								</button>
+							</h3>
+							<div id="flush-collapseThree" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to
+									demonstrate the <code>.accordion-flush</code> class. This is the third item's
+									accordion body. Nothing more exciting happening here in terms of content, but just
+									filling up the space to make it look, at least at first glance, a bit more
+									representative of how this would look in a real-world application.</div>
+							</div>
+						</div>
+					</div>
+					<!--termina accordion-->
+				</article>
+			</div>
+		</section>
+
+		<br id="chiSono">
+		<section class="container-fluid sonoManu">
+			<div class="row">
+				<article class="col-md-8 align-self-center">
+					<h2>Sono Manu</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, distinctio. Illum quia dolorem,
+						eveniet reprehenderit voluptas, provident repudiandae temporibus error possimus, veritatis
+						consequuntur? Commodi tempore quae voluptatem quibusdam, similique, alias!</p>
+				</article>
+				<div class="col-md-4">
+					<img src="img/manu.jpg" alt="Manu" class="w-100">
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
-		<ul class="contactFooter">
-			<li><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTM3MS40OTYsNDg1LjUyQzMyNy4zNiw1MDUuMzg0LDI4OS4xMDQsNTEyLDIzNi44NzIsNTEyQzExNC43Niw1MTIsNy4zNTIsNDI0LjQ1Niw3LjM1MiwyODAuMjgNCglDNy4zNTIsMTMwLjIwOCwxMTYuMjI0LDAsMjgyLjQ4OCwwYzEyOS40NzIsMCwyMjIuMTYsODkuMDE2LDIyMi4xNiwyMTIuNmMwLDEwNy40LTYwLjMyLDE3NS4wOC0xMzkuNzY4LDE3NS4wOA0KCWMtMzQuNTc2LDAtNTkuNTg0LTE3LjY1Ni02My4yNjQtNTYuNjQ4aC0xLjQ3MmMtMjIuOCwzNy41Mi01NS45MDQsNTYuNjQ4LTk0Ljg5Niw1Ni42NDhjLTQ3LjgxNiwwLTgyLjM5Mi0zNS4zMTItODIuMzkyLTk1LjY0DQoJYzAtODkuNzQ0LDY2LjIwOC0xNzEuNCwxNzIuMTM2LTE3MS40YzMyLjM2OCwwLDY5LjE0NCw4LjA5Niw4Ny41NDQsMTguMzkybC0yMi4wNjQsMTM2LjA5Ng0KCWMtNy4zNTIsNDMuMzkyLTIuMjA4LDYzLjI2NCwxOC4zOTIsNjMuOTkyYzMxLjYzMiwwLjczNiw3MS4zNTItMzkuNzI4LDcxLjM1Mi0xMjQuMzJjMC05NS42MzItNjEuNzkyLTE2OS45MzYtMTc1LjgyNC0xNjkuOTM2DQoJYy0xMTIuNTQ0LDAtMjExLjEyOCw4OC4yOC0yMTEuMTI4LDIyOC43ODRjMCwxMjIuODQ4LDc4LjcxMiwxOTIuNzM2LDE4OC4zMjgsMTkyLjczNmMzNy41MiwwLDc3LjI0OC04LjA4OCwxMDYuNjY0LTIzLjU0NA0KCUwzNzEuNDk2LDQ4NS41MnogTTMwNi4wMjQsMTgxLjcwNGMtNS44ODgtMS40NzItMTMuMjQ4LTIuOTQ0LTIyLjgwOC0yLjk0NGMtNDguNTQ0LDAtODYuODA4LDQ3LjgxNi04Ni44MDgsMTA0LjQ1Ng0KCWMwLDI3Ljk1MiwxMi41MTIsNDUuNjA4LDM2Ljc4NCw0NS42MDhjMjcuMjE2LDAsNTUuOTEyLTM0LjU3Niw2Mi41MjgtNzcuMjRMMzA2LjAyNCwxODEuNzA0eiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /><a href="mailto: fattoamanucagliari@gmail.com"> fattoamanucagliari@gmail.com</a></li>
-			<li><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyLjAyMSA1MTIuMDIxIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi4wMjEgNTEyLjAyMSIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Zz48cGF0aCBkPSJtMzY3Ljk4OCA1MTIuMDIxYy0xNi41MjggMC0zMi45MTYtMi45MjItNDguOTQxLTguNzQ0LTcwLjU5OC0yNS42NDYtMTM2LjEyOC02Ny40MTYtMTg5LjUwOC0xMjAuNzk1cy05NS4xNS0xMTguOTEtMTIwLjc5NS0xODkuNTA4Yy04LjI0MS0yMi42ODgtMTAuNjczLTQ2LjEwOC03LjIyNi02OS42MTIgMy4yMjktMjIuMDE2IDExLjc1Ny00My4zODkgMjQuNjYzLTYxLjgwOSAxMi45NjMtMTguNTAxIDMwLjI0NS0zMy44ODkgNDkuOTc3LTQ0LjUgMjEuMDQyLTExLjMxNSA0NC4wMDktMTcuMDUzIDY4LjI2NS0xNy4wNTMgNy41NDQgMCAxNC4wNjQgNS4yNzEgMTUuNjQ1IDEyLjY0N2wyNS4xMTQgMTE3LjE5OWMxLjEzNyA1LjMwNy0uNDk0IDEwLjgyOS00LjMzMSAxNC42NjdsLTQyLjkxMyA0Mi45MTJjNDAuNDgyIDgwLjQ4NiAxMDYuMTcgMTQ2LjE3NCAxODYuNjU2IDE4Ni42NTZsNDIuOTEyLTQyLjkxM2MzLjgzOC0zLjgzNyA5LjM2MS01LjQ2NiAxNC42NjctNC4zMzFsMTE3LjE5OSAyNS4xMTRjNy4zNzcgMS41ODEgMTIuNjQ3IDguMTAxIDEyLjY0NyAxNS42NDUgMCAyNC4yNTYtNS43MzggNDcuMjI0LTE3LjA1NCA2OC4yNjYtMTAuNjExIDE5LjczMi0yNS45OTkgMzcuMDE0LTQ0LjUgNDkuOTc3LTE4LjQxOSAxMi45MDYtMzkuNzkyIDIxLjQzNC02MS44MDkgMjQuNjYzLTYuODk5IDEuMDEzLTEzLjc5NyAxLjUxOC0yMC42NjggMS41MTl6bS0yMzYuMzQ5LTQ3OS4zMjFjLTMxLjk5NSAzLjUzMi02MC4zOTMgMjAuMzAyLTc5LjI1MSA0Ny4yMTctMjEuMjA2IDMwLjI2NS0yNi4xNTEgNjcuNDktMTMuNTY3IDEwMi4xMzIgNDkuMzA0IDEzNS43MjYgMTU1LjQyNSAyNDEuODQ3IDI5MS4xNTEgMjkxLjE1MSAzNC42NDEgMTIuNTg0IDcxLjg2NiA3LjY0IDEwMi4xMzItMTMuNTY3IDI2LjkxNS0xOC44NTggNDMuNjg1LTQ3LjI1NiA0Ny4yMTctNzkuMjUxbC05NS4zNDEtMjAuNDMtNDQuODE2IDQ0LjgxNmMtNC43NjkgNC43NjktMTIuMDE1IDYuMDM2LTE4LjExNyAzLjE2OC05NS4xOS00NC43Mi0xNzIuMjQyLTEyMS43NzItMjE2Ljk2Mi0yMTYuOTYyLTIuODY3LTYuMTAzLTEuNjAxLTEzLjM0OSAzLjE2OC0xOC4xMTdsNDQuODE2LTQ0LjgxNnoiLz48L2c+PC9zdmc+" /><a href="tel:+3933311508423"> 33311508423</a></li>
-		</ul>
-		<ul class="socialFooter">
-			<li><a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIC0xLjk4MiAtMS44NDQgMCAtMTMyLjUyMiAtNTEuMDc3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMzcuMTA2IiB4Mj0iLTI2LjU1NSIgeTE9Ii03Mi43MDUiIHkyPSItODQuMDQ3Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1NDNlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzN2FiIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMS41IDEuNjMzYy0xLjg4NiAxLjk1OS0xLjUgNC4wNC0xLjUgMTAuMzYyIDAgNS4yNS0uOTE2IDEwLjUxMyAzLjg3OCAxMS43NTIgMS40OTcuMzg1IDE0Ljc2MS4zODUgMTYuMjU2LS4wMDIgMS45OTYtLjUxNSAzLjYyLTIuMTM0IDMuODQyLTQuOTU3LjAzMS0uMzk0LjAzMS0xMy4xODUtLjAwMS0xMy41ODctLjIzNi0zLjAwNy0yLjA4Ny00Ljc0LTQuNTI2LTUuMDkxLS41NTktLjA4MS0uNjcxLS4xMDUtMy41MzktLjExLTEwLjE3My4wMDUtMTIuNDAzLS40NDgtMTQuNDEgMS42MzN6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjxwYXRoIGQ9Im0xMS45OTggMy4xMzljLTMuNjMxIDAtNy4wNzktLjMyMy04LjM5NiAzLjA1Ny0uNTQ0IDEuMzk2LS40NjUgMy4yMDktLjQ2NSA1LjgwNSAwIDIuMjc4LS4wNzMgNC40MTkuNDY1IDUuODA0IDEuMzE0IDMuMzgyIDQuNzkgMy4wNTggOC4zOTQgMy4wNTggMy40NzcgMCA3LjA2Mi4zNjIgOC4zOTUtMy4wNTguNTQ1LTEuNDEuNDY1LTMuMTk2LjQ2NS01LjgwNCAwLTMuNDYyLjE5MS01LjY5Ny0xLjQ4OC03LjM3NS0xLjctMS43LTMuOTk5LTEuNDg3LTcuMzc0LTEuNDg3em0tLjc5NCAxLjU5N2M3LjU3NC0uMDEyIDguNTM4LS44NTQgOC4wMDYgMTAuODQzLS4xODkgNC4xMzctMy4zMzkgMy42ODMtNy4yMTEgMy42ODMtNy4wNiAwLTcuMjYzLS4yMDItNy4yNjMtNy4yNjUgMC03LjE0NS41Ni03LjI1NyA2LjQ2OC03LjI2M3ptNS41MjQgMS40NzFjLS41ODcgMC0xLjA2My40NzYtMS4wNjMgMS4wNjNzLjQ3NiAxLjA2MyAxLjA2MyAxLjA2MyAxLjA2My0uNDc2IDEuMDYzLTEuMDYzLS40NzYtMS4wNjMtMS4wNjMtMS4wNjN6bS00LjczIDEuMjQzYy0yLjUxMyAwLTQuNTUgMi4wMzgtNC41NSA0LjU1MXMyLjAzNyA0LjU1IDQuNTUgNC41NSA0LjU0OS0yLjAzNyA0LjU0OS00LjU1LTIuMDM2LTQuNTUxLTQuNTQ5LTQuNTUxem0wIDEuNTk3YzMuOTA1IDAgMy45MSA1LjkwOCAwIDUuOTA4LTMuOTA0IDAtMy45MS01LjkwOCAwLTUuOTA4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" /></a></li>	
-			<li><a href="https://www.facebook.com/fattoamanuriciclo" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuOTk3IDMuOTg1aDIuMTkxdi0zLjgxNmMtLjM3OC0uMDUyLTEuNjc4LS4xNjktMy4xOTItLjE2OS02LjkzMiAwLTUuMDQ2IDcuODUtNS4zMjIgOWgtMy40ODd2NC4yNjZoMy40ODZ2MTAuNzM0aDQuMjc0di0xMC43MzNoMy4zNDVsLjUzMS00LjI2NmgtMy44NzdjLjE4OC0yLjgyNC0uNzYxLTUuMDE2IDIuMDUxLTUuMDE2eiIgZmlsbD0iIzNiNTk5OSIvPjwvc3ZnPg==" /></a></li>	
-		</ul>
+		<a href=" mailto: fattoamanucagliari@gmail.com"><img src="img/email-1.svg" /></a>
+		<a href="tel:+3933311508423"><img src="img/phone-1.svg" /></a>
+		<a href="https://www.instagram.com/fatto_a_manu_cagliari/" target="_blank"><img src="img/instagram-1.svg" /></a>
+		<a href="https://www.facebook.com/fattoamanuriciclo" target="_blank"><img src="img/facebook-1.svg" /></a>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous">
+	</script>
 </body>
+
 </html>
