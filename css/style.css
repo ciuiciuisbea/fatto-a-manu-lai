@@ -7,80 +7,164 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.logo{
-
+html{
+	font-size: 62.5%;
 }
 
 body{
 	background-color: #fffdedff;
 	color: #061826ff;
+	font-size: 1.2rem;
 }
 
 header{
 	padding: 10px;
 	background-color: #59c9a5ff;
 }
-.menuNav{
-	list-style: none;
+
+.logo{
+	width: 30%;
+	font-size: 3rem;
+	/*float: left;*/
 }
-.menuNav a{
+
+.navigation{
+	width: 40%;
+	/*	float: right;*/
+}
+
+.relative{position: relative;}
+
+.subNavUno{
+	top:2px;
+	left: -8px;
+	background-color:  #59c9a5ff;
+	width: 130px;
+	height: 30px;
+	padding: 15px 10px 10px 25px;
+}
+
+.subNavDue{
+	top:2px;
+	left: -8px;
+	background-color:  #59c9a5ff;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	width: 130px;
+	height: 30px;
+	padding: 10px 10px 15px 25px;
+}
+nav li a {
 	text-decoration: none;
 	color: #061826ff;
 }
-.menuNav a:hover{
-	color: #bbbdf6ff;
+
+nav li a:hover{
+	color: #faf3ddff;;
 	border-bottom: 2px solid;
+	font-weight: bold;
 }
+
+nav li li a:hover{
+	color: #faf3ddff;;
+	border-bottom: none;
+	font-weight: normal;
+}
+
+nav ul {
+	list-style: none;
+	font-size:0;
+}
+nav li {
+	display: inline-block;
+	width: 25%;
+	position:relative;
+	font-size: 2rem;
+	list-style: none;
+}
+nav ul ul {
+	position: absolute;
+	display: none;
+}
+nav ul ul li {
+	display: block;
+}
+nav ul li:hover ul {
+	display:block;
+ }
+ 
 main{
 	padding: 10px;
 }
 footer{
 	background-color: #59c9a5ff;
 	padding: 10px;
+	font-size: 1.5rem;
 }
+
+footer a{
+	text-decoration: none;
+	color: #061826ff;
+}
+
 footer a:hover{
-	color: #bbbdf6ff;
+	color: #faf3ddff;
 }
 footer li{
+	display: inline-block;
 	list-style: none;
+	margin: 10px 40px;
 }
 footer li img{
 	height: 20px;
 }
 
+/*.contactFooter{
+	
+}
+
+.socialFooter{
+	
+}*/
+
 h1{
 	color:#857e74ff;
-	font-size: 40px;
+	font-size: 4rem;
 	letter-spacing: 4px;
 	word-spacing: 7px;
 	line-height: 50px;
 }
 h2{
 	color:#857e74ff;
-	font-size: 30px;
+	font-size: 3rem;
 	letter-spacing: 3px;
 	word-spacing: 6px;
 	line-height: 40px;
 }
 p{
 	padding: 20px;
-	font-size: 16px;
+	font-size: 1.5rem;
 	letter-spacing: 1px;
 	word-spacing: 5px;
-	line-height: 22px;
+	line-height: 2rem;
 }
 section{
 	padding: 10px;
 }
 .button{
 	background-color: #bbbdf6ff;
-	padding: 5px;
+	padding: 5px 10px;
+	border: solid 0.5px #857e74ff;
+	border-radius: 5px;
 }
 .linkInterno{
-	color: #857e74ff;
+	color:  #fffdedff;
+	background-color: #857e74ff;
+	font-size: 1.5rem;
 	text-decoration: none;
-	border: 1px solid;
-	padding: 4px;
+	padding: 0.8rem;
+	border-radius: 5px;
+	margin-right: 20px;
 }
 
 .rightAlign{
@@ -104,12 +188,6 @@ section{
 	width: 400px;
 	margin: 20px;
 	padding: 10px;
-}
-#contatto table{
-	padding: 5px;
-	margin: 20px;
-}
-#contatto table td{
-	padding: 30px;
-	margin: 30px;
+	border-radius: 5px;
+	border: solid 0.5px #857e74ff;
 }
