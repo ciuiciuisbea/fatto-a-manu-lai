@@ -1,7 +1,7 @@
 /*  Styles for the home page  */
 
 #home main{
-    margin: 20px 50px 0px 50px;
+    margin: 20px;
 }
 
 #home h1{
@@ -20,6 +20,9 @@
     background-color: $cambridge-blue;
     color: $black;
     font-size: 1.5rem;
+    &::after{
+        z-index: 1;
+    }
 }
 
 .accordion-button:focus{

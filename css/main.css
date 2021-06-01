@@ -61,6 +61,9 @@ header {
   top: 0;
   z-index: 10; }
 
+.navbar-light {
+  background-color: #73665eff; }
+
 .menu {
   color: #000009ff;
   font-size: 1.5rem;
@@ -143,7 +146,7 @@ a.nav-link.menu__button.menu__button--link:hover {
 
 /*  Styles for the home page  */
 #home main {
-  margin: 20px 50px 0px 50px; }
+  margin: 20px; }
 
 #home h1 {
   font-family: 'Julee', cursive; }
@@ -158,6 +161,8 @@ a.nav-link.menu__button.menu__button--link:hover {
   background-color: #9fb8adff;
   color: #000009ff;
   font-size: 1.5rem; }
+  .accordion-button::after {
+    z-index: 1; }
 
 .accordion-button:focus {
   box-shadow: none; }
@@ -236,16 +241,16 @@ a.nav-link.menu__button.menu__button--link:hover {
   align-items: center;
   justify-content: center; }
 
-.formulario__campo, .formulario__campo-testo {
+.formulario__campo {
   margin: 6px 0 6px 0;
   padding-left: 5px;
+  max-width: 30rem;
   border: none;
   border-radius: 5px; }
-
-.formulario__campo:focus, .formulario__campo-testo:focus {
-  transform: scale(1.1);
-  transition: transform .2s;
-  border: none; }
+  .formulario__campo:focus {
+    transform: scale(1.1);
+    transition: transform .2s;
+    border: none; }
 
 .formulario__bottone {
   text-align: center;
@@ -263,6 +268,10 @@ a.nav-link.menu__button.menu__button--link:hover {
   .info__contatto, .formulario {
     max-width: 37vw;
     margin-top: 5vh; } }
+
+@media only screen and (min-width: 1200px) {
+  .formulario__campo {
+    max-width: 50rem; } }
 
 /*  Styles for "Prodotti"  */
 #prodotti main {
