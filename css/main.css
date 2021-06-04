@@ -181,6 +181,7 @@ a.nav-link.menu__button.menu__button--link:hover {
 .sonoManu__img .sonoManu__img--rounded-border {
   border-radius: .3rem; }
 
+/* Media queries for the home page */
 @media only screen and (min-width: 768px) {
   .materiali__article {
     padding-top: 0; }
@@ -263,6 +264,7 @@ a.nav-link.menu__button.menu__button--link:hover {
 .formulario__bottone {
   transform: translate(2px, 2px); }
 
+/*Media queries for "Contatto */
 @media only screen and (min-width: 768px) {
   .infoContatto, .formulario {
     max-width: 37vw;
@@ -503,6 +505,7 @@ aside {
   .errorMessage__box .internalLink {
     text-align: left; }
 
+/* Media queries for page 404 */
 @media only screen and (min-width: 768px) {
   .errorMessage__box {
     margin-top: 7vh;
