@@ -1,5 +1,5 @@
 /*  Styles for "Contatto"  */
-#contatto .backgroundImage{
+/*#contatto .backgroundImage{
     margin-top: 85px;
     padding-top: 10px;
     background-color: $dim-gray;
@@ -7,7 +7,23 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 90vh;
+    height: 87vh;
+}*/
+
+.backgroundImage{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/cemento-portacandela.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contatto main{
+    margin-top: 10vh;
 }
 
 .contatto__title{
@@ -85,9 +101,9 @@
 }
 
 @media only screen and (min-width: $md){
-    .info__contatto, .formulario{
+    .infoContatto, .formulario{
         max-width: 37vw;
-        margin-top: 5vh;
+        margin-top: 25vh;
     }
 
 }
