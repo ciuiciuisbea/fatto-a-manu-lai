@@ -1,9 +1,11 @@
 /*  Styles for "Prodotti"  */
+#prodotti .frame{
+    margin-bottom: 0;
+}
 
 #prodotti main{
     margin-top: 10px;
     padding: 20px;
-	min-height: 50vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -57,7 +59,6 @@
 
 .purchase{
     margin: 20px;
-    text-align: right;
     .purchase__name{
         font-size: 2.5rem;
     }
@@ -175,10 +176,47 @@ aside{
         justify-content: space-evenly;
     }
     
-    .product-card__img{
-        display: block;
-        width: 25vw;
-        border-radius: .3rem;
+    .product-card__cemento{
+            background-image: url(../img/cemento.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 30vh;
+            width: 28vw;
+            border-radius: .3rem;
+            position: relative;
+        }
+    .product-card__riuso{
+            background-image: url(../img/riuso.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 30vh;
+            width: 28vw;
+            border-radius: .3rem;
+        }
+
+    .overlay-text{
+        display: none;
+        background-color: rgba($platinum, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-card:hover {
+        transform: translate(0);
+        .overlay-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .product-card__name{
+        font-weight: bold;
     }
     
     .list__content--hideText{
@@ -217,10 +255,6 @@ aside{
     .product__container{
         grid-template-columns: repeat(2, 25vw);
         grid-template-rows: auto;
-    }
-
-    .product-card__img{
-        width: 23vw;
     }
 
     .gallery__pictures{
