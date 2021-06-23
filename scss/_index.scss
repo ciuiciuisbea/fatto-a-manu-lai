@@ -1,61 +1,47 @@
-/*  Styles for the home page  */
+/* Style for the home page */
+#home .frame{
+    min-height: 80vh;
+    background-image: url(../img2/cemento_background_home.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
 
 #home main{
-    margin: 20px;
+    display: flex;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
 }
-
-#home h1{
-    font-family: 'Julee', cursive;
-}
-
-.materiali__article{
-    padding-top: 20px;
-}
-
-.materiali .accordion-item{
-    background-color: $platinum;
-}
-
-.accordion-button{
-    background-color: $cambridge-blue;
-    color: $black;
-    font-size: 1.5rem;
-    &::after{
-        z-index: 1;
+.introduction {
+    text-align: center;
+    background-color: rgba($talco, .7);
+    padding: 20px;
+    border-radius: 12px;
+    width: 90vw;
+    h1{
+        font-weight: bold;
+        color: $azzurro;
+    }
+    h2{
+        color: $azzurro;
+    }
+    p{
+        font-size: 1.5rem;
     }
 }
 
-.accordion-button:focus{
-    box-shadow: none;
-}
-
-.accordion-button:not(.collapsed){
-    background-color: $cambridge-blue;
-    color: $black;
-    font-size: 1.5rem;
-}
-
-.sonoManu__article{
-    padding-bottom: 20px;
-    .sonoManu__article--handwritten{
-        font-family: 'Julee', cursive;
-        padding-bottom: 0;
-    }
-}
-
-.sonoManu__img{
-    .sonoManu__img--rounded-border{
-        border-radius: .3rem;
-    }
-}
 
 /* Media queries for the home page */
 @media only screen and (min-width:$md){
-    .materiali__article{
-        padding-top: 0;
+    #home .frame{
+        background-position: left bottom;
     }
-    
-    .sonoManu__article{
-        padding-bottom: 0;
+    #home main{
+        justify-content: flex-end;
+        align-items: center;
+        .introduction{
+            width: 40vw;
+        }
     }
 }

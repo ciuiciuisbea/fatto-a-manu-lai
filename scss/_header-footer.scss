@@ -1,21 +1,19 @@
-/*  Styles for the header  */
+/* Header style*/
+
+
 header{
-    background-color: $dim-gray;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
+    background-color: rgba($sfondo, .5);
+    width: 100%;
+    border-bottom: solid 1px rgba($azzurro, .8);
 }
 
 .navbar-light{
-    background-color: $dim-gray;
+    background-color: none; 
 }
 
 .menu{
-    color:$black;
     font-size: 1.5rem;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
 }
 
@@ -29,7 +27,7 @@ header{
 }
 
 a.nav-link.menu__button.menu__button--link{
-    color: $black;
+    color: $grigio;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -39,7 +37,8 @@ a.nav-link.menu__button.menu__button--link{
 }
 
 a.nav-link.menu__button.menu__button--link:hover{
-    color: $platinum;
+    color: $azzurro;
+    font-weight: bold;
     background-size: 100% 2px;
 }
 
@@ -50,11 +49,10 @@ a.nav-link.menu__button.menu__button--link:hover{
 }
 
 
-/*  Styles for the footer */
+/* Footer style */
 .footer{
     width: 100vw;
     padding: 10px;
-	background-color:  $dim-gray;
 	font-size: 1.2rem;
     position: fixed;
     left: 0;
@@ -76,7 +74,6 @@ a.nav-link.menu__button.menu__button--link:hover{
 
     .footer__link{
         text-decoration: none;
-        color: $black;
         margin-left: 6px;
         margin-right: 6px;
     }
@@ -84,5 +81,4 @@ a.nav-link.menu__button.menu__button--link:hover{
         transform: rotate(10deg);
         transition: transform .2s;
     }
-
 }

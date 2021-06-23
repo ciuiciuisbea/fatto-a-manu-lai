@@ -10,64 +10,49 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #e6e8e6ff;
-  color: #000009ff;
-  font-size: 1.2rem; }
+  background-color: #fffef5;
+  color: #57595b;
+  font-size: 1.3rem;
+  min-height: 90vh; }
 
 .frame {
-  padding: 10px;
-  margin-top: 90px;
-  margin-bottom: 10vh; }
+  margin: auto;
+  margin-bottom: 10vh;
+  width: 85vw;
+  padding: 15px; }
 
 h1 {
-  color: #00241bff;
-  font-size: 3.5rem; }
+  color: #f2cf62;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: .5rem; }
 
 h2 {
-  color: #00241bff;
-  font-size: 2.5rem; }
+  color: #f2cf62;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: .5rem; }
 
 h3 {
-  color: #00241bff;
+  color: #6493a5;
   font-size: 2rem; }
 
 p {
   font-size: 1.4rem;
   padding-top: 3px; }
 
-section {
-  padding: 10px; }
-
-.internalLink {
-  color: #e6e8e6ff;
-  background-color: #73665eff;
-  font-size: 1.5rem;
-  text-decoration: none;
-  padding: .8rem;
-  margin-top: 5px;
-  border-radius: 5px;
-  display: inline-block; }
-
-.internalLink:hover {
-  color: #e6e8e6ff;
-  transform: translate(2px, 2px); }
-
-/*  Styles for the header  */
+/* Header style*/
 header {
-  background-color: #73665eff;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10; }
+  background-color: rgba(242, 242, 242, 0.5);
+  width: 100%;
+  border-bottom: solid 1px rgba(100, 147, 165, 0.8); }
 
 .navbar-light {
-  background-color: #73665eff; }
+  background-color: none; }
 
 .menu {
-  color: #000009ff;
   font-size: 1.5rem;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-right: 5%; }
 
 .menu__logo img {
@@ -78,7 +63,7 @@ header {
   transition: transform .5s; }
 
 a.nav-link.menu__button.menu__button--link {
-  color: #000009ff;
+  color: #57595b;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -87,18 +72,18 @@ a.nav-link.menu__button.menu__button--link {
   padding: 1rem; }
 
 a.nav-link.menu__button.menu__button--link:hover {
-  color: #e6e8e6ff;
+  color: #6493a5;
+  font-weight: bold;
   background-size: 100% 2px; }
 
 @media only screen and (min-width: 768px) {
   .menu__logo {
     max-width: 70px; } }
 
-/*  Styles for the footer */
+/* Footer style */
 .footer {
   width: 100vw;
   padding: 10px;
-  background-color: #73665eff;
   font-size: 1.2rem;
   position: fixed;
   left: 0;
@@ -137,105 +122,113 @@ a.nav-link.menu__button.menu__button--link:hover {
     background-size: 100%; }
   .footer .footer__link {
     text-decoration: none;
-    color: #000009ff;
     margin-left: 6px;
     margin-right: 6px; }
   .footer .footer__link:hover {
     transform: rotate(10deg);
     transition: transform .2s; }
 
-/*  Styles for the home page  */
+/* Style for the home page */
+#home .frame {
+  min-height: 80vh;
+  background-image: url(../img2/cemento_background_home.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 #home main {
-  margin: 20px; }
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center; }
 
-#home h1 {
-  font-family: 'Julee', cursive; }
-
-.materiali__article {
-  padding-top: 20px; }
-
-.materiali .accordion-item {
-  background-color: #e6e8e6ff; }
-
-.accordion-button {
-  background-color: #9fb8adff;
-  color: #000009ff;
-  font-size: 1.5rem; }
-  .accordion-button::after {
-    z-index: 1; }
-
-.accordion-button:focus {
-  box-shadow: none; }
-
-.accordion-button:not(.collapsed) {
-  background-color: #9fb8adff;
-  color: #000009ff;
-  font-size: 1.5rem; }
-
-.sonoManu__article {
-  padding-bottom: 20px; }
-  .sonoManu__article .sonoManu__article--handwritten {
-    font-family: 'Julee', cursive;
-    padding-bottom: 0; }
-
-.sonoManu__img .sonoManu__img--rounded-border {
-  border-radius: .3rem; }
+.introduction {
+  text-align: center;
+  background-color: rgba(255, 254, 245, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  width: 90vw; }
+  .introduction h1 {
+    font-weight: bold;
+    color: #6493a5; }
+  .introduction h2 {
+    color: #6493a5; }
+  .introduction p {
+    font-size: 1.5rem; }
 
 /* Media queries for the home page */
 @media only screen and (min-width: 768px) {
-  .materiali__article {
-    padding-top: 0; }
-  .sonoManu__article {
-    padding-bottom: 0; } }
+  #home .frame {
+    background-position: left bottom; }
+  #home main {
+    justify-content: flex-end;
+    align-items: center; }
+    #home main .introduction {
+      width: 40vw; } }
 
-/*  Styles for "Contatto"  */
-.backgroundImage {
-  margin-top: 10vh;
-  min-height: 90vh;
-  max-width: 100vw;
-  background-image: url(../img/cemento-portacandela.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+/* Style for Chi Sono */
+body#chiSono {
+  min-height: 100vh;
+  background-image: url(../img2/vari-vasetti.jpg);
+  background-position: center center;
   background-size: cover; }
 
-.contatto__title {
+.sonoManu {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(255, 254, 245, 0.8);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  color: #57595b; }
+  .sonoManu article {
+    text-align: justify; }
+  .sonoManu__img {
+    border-radius: 50%;
+    align-self: center; }
+
+/* Contatto style */
+body#contatto {
+  background-image: url(../img2/vari-vasetti.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+#contatto h1 {
   display: none; }
 
-.infoContatto {
-  background-color: #00241bff;
-  opacity: .8;
-  text-align: center;
-  max-width: 300px;
-  margin: auto;
-  color: #e6e8e6ff;
-  font-size: 1.2rem;
-  border: solid 0.5px #00241bff;
-  border-radius: 15px;
-  padding: 10px 20px 10px 20px;
-  margin-top: 5vh; }
-  .infoContatto .infoContatto--link {
-    text-decoration: none;
-    color: #048a81ff; }
-  .infoContatto .infoContatto--link:hover {
-    font-style: italic; }
+.contatto {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
 
-.formulario__title {
+.infoContatto, .formulario {
+  background-color: rgba(87, 89, 91, 0.8);
+  text-align: center;
+  width: 90vw;
+  min-height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  border: solid 0.5px #57595b;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px; }
+  .infoContatto .infoContatto--link, .formulario .infoContatto--link {
+    text-decoration: none;
+    color: #f2cf62; }
+
+#contatto h2 {
   padding-bottom: 5px;
-  color: #e6e8e6ff; }
+  color: #f2cf62; }
 
 .formulario {
-  background-color: #00241bff;
-  opacity: .8;
-  text-align: center;
-  max-width: 300px;
-  margin: auto;
-  color: #e6e8e6ff;
-  font-size: 1.2rem;
-  border: solid 0.5px #00241bff;
-  border-radius: 15px;
-  margin-top: 2vh;
-  margin-bottom: 15vh;
-  padding: 10px 20px 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,242 +247,192 @@ a.nav-link.menu__button.menu__button--link:hover {
 
 .formulario__bottone {
   text-align: center;
-  background-color: #9fb8adff;
+  background-color: #6493a5;
   padding: 5px 10px 5px 10px !important;
-  color: #000009ff;
+  color: #f2f2f2;
   font-weight: bold;
-  border: solid 0.5px #73665eff;
-  border-radius: 5px; }
-
-.formulario__bottone {
+  border: solid 0.5px #57595b;
+  border-radius: 5px;
   transform: translate(2px, 2px); }
 
 /*Media queries for "Contatto */
+@media only screen and (min-width: 576px) {
+  .infoContatto, .formulario, .formulario {
+    width: 70vw; } }
+
 @media only screen and (min-width: 768px) {
-  .infoContatto, .formulario {
-    max-width: 37vw;
-    margin-top: 25vh; } }
+  .contatto {
+    flex-direction: row; }
+  .infoContatto, .formulario, .formulario {
+    width: 37vw; } }
 
 @media only screen and (min-width: 1200px) {
   .formulario__campo {
     max-width: 50rem; } }
 
-/*  Styles for "Prodotti"  */
-#prodotti .frame {
-  margin-bottom: 0; }
+/* Styles for Prodotti and Galleria */
+#prodotti h1, #galleria h1 {
+  color: #f2cf62;
+  margin-bottom: 20px; }
 
-#prodotti main {
-  margin-top: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
-
-.product__title {
-  text-align: center; }
-
-.product {
+.prodotti {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
+  width: 100%;
+  box-sizing: border-box;
+  height: 80vh; }
 
-.product__container {
-  width: 70vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  row-gap: 40%;
-  margin-bottom: 50px; }
-
-.product-card {
-  border: solid 1px #73665eff;
-  box-shadow: 0 4px 8px 0 #73665eff, 0 6px 20px 0 #ced0ceff;
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 2%;
+  line-height: 0;
   border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.product-card__link {
-  text-align: center;
-  text-decoration: none; }
-
-.product-card__img {
-  display: none; }
-
-.product-card__name {
-  padding-top: 10px;
-  font-size: 2rem; }
-
-.product-card:hover {
-  transform: translate(2px, 2px); }
+  box-shadow: 0 4px 8px 0 #57595b, 0 6px 20px 0 #fffef5;
+  position: relative; }
+  .box img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s; }
+  .box span {
+    font-size: 3rem;
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    background-color: rgba(87, 89, 91, 0.7);
+    height: 10vh;
+    line-height: 2.6; }
+  .box .materiali {
+    display: none; }
+  .box:hover {
+    flex: 1 1 50%;
+    border: solid 2px #f2cf62; }
+    .box:hover img {
+      width: 100%;
+      height: 100%; }
 
 .purchase {
-  margin: 20px; }
+  background-color: #57595b;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  color: #f2f2f2;
+  margin-top: 5vh; }
   .purchase .purchase__name {
-    font-size: 2.5rem; }
+    color: #f2cf62; }
   .purchase .purchase--link {
     text-decoration: none;
-    color: #048a81ff; }
+    color: #f2cf62; }
 
-/*  Styles for "Cemento" and "Riuso"  */
-.prodMaterial {
-  padding: 30px 30px 10px 30px;
-  margin-bottom: 0px;
-  text-align: justify; }
-  .prodMaterial .prodMaterial__subtitle {
-    font-size: 1.7rem;
-    font-weight: bold; }
-  .prodMaterial .prodMaterial__list {
-    background-color: #e6e8e6ff;
-    border: none; }
-  .prodMaterial .list__name--bold {
-    font-size: 1.5rem; }
+/* Styles for Galleria */
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+  /* Hidden by default */ }
 
-aside {
-  max-width: 15vw; }
-  aside a {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #00241bff;
-    text-decoration: none;
-    text-align: center;
-    border: solid 1px #73665eff;
-    border-radius: 5px;
-    padding: 0.8rem; }
-  aside a:hover {
-    color: #00241bff;
-    transform: translate(2px, 2px); }
-  aside img {
-    max-width: 12vw;
-    display: none; }
-  aside h3 {
-    margin-bottom: 0px; }
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block; }
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer; }
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd; }
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white; }
 
 .gallery {
-  padding: 0 30px 0 30px;
-  margin-top: 15px; }
-
-.gallery__pictures {
-  padding-top: 10px;
   display: grid;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   align-items: center;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px; }
-  .gallery__pictures img {
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr); }
+  .gallery img {
+    border: solid 3px #f2cf62;
+    border-radius: 12px;
     max-width: 80vw;
     display: block;
-    justify-self: center;
-    border-radius: .3rem; }
-  .gallery__pictures img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s; }
+    justify-self: center; }
+    .gallery img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s; }
 
 /*  Media queries for "Prodotti", "Cemento" and "Riuso"  */
 @media only screen and (min-width: 576px) {
-  .prodotti__container {
-    width: 50vw; }
-  .gallery__pictures {
-    width: 90vw;
-    display: grid;
+  .gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 15px; }
-    .gallery__pictures img {
+    .gallery img {
       max-width: 30vw; } }
 
 @media only screen and (min-width: 768px) {
-  .product__title {
-    display: none; }
-  .product__container {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(2, 28vw);
-    grid-template-rows: auto;
-    column-gap: 10%;
-    justify-content: space-evenly; }
-  .product-card__cemento {
-    background-image: url(../img/cemento.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    width: 28vw;
-    border-radius: .3rem;
-    position: relative; }
-  .product-card__riuso {
-    background-image: url(../img/riuso.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    height: 30vh;
-    width: 28vw;
-    border-radius: .3rem; }
-  .overlay-text {
-    display: none;
-    background-color: rgba(230, 232, 230, 0.5);
+  .prodotti {
+    flex-direction: row;
+    justify-content: space-between; }
+  .box:hover .materiali {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
-  .product-card:hover {
-    transform: translate(0); }
-    .product-card:hover .overlay-text {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .product-card__name {
-    font-weight: bold; }
-  .gallery__pictures {
-    width: 90vw;
-    display: grid;
+    top: 0%;
+    left: 0%;
+    /*transform: translate(-50%, -50%);*/
+    color: #f2f2f2;
+    background-color: rgba(87, 89, 91, 0.6);
+    text-align: center;
+    height: 100%;
+    width: 100%; }
+    .box:hover .materiali p {
+      margin: 10px;
+      line-height: 3rem;
+      padding: 5px 20px; }
+  .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 15px; }
-    .gallery__pictures img {
+    grid-template-rows: auto; }
+    .gallery img {
       max-width: 25vw; } }
 
-@media only screen and (min-width: 992px) {
-  aside a {
-    box-shadow: 0 4px 8px 0 #73665eff, 0 6px 20px 0 #ced0ceff; }
-  aside img {
-    display: block;
-    margin-bottom: 10px;
-    border-radius: .3rem; } }
-
 @media only screen and (min-width: 1200px) {
-  .product__container {
-    grid-template-columns: repeat(2, 25vw);
-    grid-template-rows: auto; }
-  .gallery__pictures {
-    width: 90vw;
-    display: grid;
+  .gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 20px; }
-    .gallery__pictures img {
-      max-width: 20vw; } }
+    .gallery img {
+      width: 20vw; } }
 
 /*-- Styles for 404 page --*/
-.notFound__background {
+body#notFound {
   height: 100vh;
   width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
   background-image: url(../img/cemento-rotto-pianta.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 #notFound main {
-  margin-top: 10vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center; }
 
 .errorMessage__box {
@@ -498,15 +441,24 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  border-radius: 12px; }
+  align-items: center;
+  border-radius: 12px;
+  background-color: rgba(242, 242, 242, 0.7); }
   .errorMessage__box .errorMessage__content {
-    font-size: 1.8rem; }
-  .errorMessage__box .internalLink {
-    text-align: left; }
+    font-size: 1.8rem;
+    text-align: center; }
+  .errorMessage__box .bottone {
+    padding: 10px 50px;
+    background-color: #6493a5;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #f2f2f2; }
+    .errorMessage__box .bottone:hover {
+      transform: translate(2px, 2px); }
 
 /* Media queries for page 404 */
 @media only screen and (min-width: 768px) {
   .errorMessage__box {
     margin-top: 7vh;
-    max-width: 40vw; } }
+    max-width: 30vw; } }

@@ -1,0 +1,30 @@
+/* Style for Chi Sono */
+
+body#chiSono{
+    min-height: 100vh;
+    background-image: url(../img2/vari-vasetti.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sonoManu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba($talco, .8);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    color: $grigio;
+    article {
+        text-align: justify;
+    }
+    
+    &__img {
+        border-radius: 50%;
+        align-self: center;
+    }
+}
+
+
+

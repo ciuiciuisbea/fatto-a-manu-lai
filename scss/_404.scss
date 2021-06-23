@@ -1,10 +1,7 @@
 /*-- Styles for 404 page --*/
-.notFound__background{
+body#notFound{
     height: 100vh;
     width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 0;
     background-image: url(../img/cemento-rotto-pianta.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -12,9 +9,8 @@
 }
 
 #notFound main{
-    margin-top: 10vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -24,13 +20,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 12px;
+    background-color: rgba($sfondo, .7);
     .errorMessage__content{
         font-size: 1.8rem;
+        text-align: center;
     }
-    .internalLink{
-        text-align: left;
+    .bottone{
+        padding: 10px 50px;
+        background-color: $azzurro;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: $sfondo;
+        &:hover{
+            transform: translate(2px, 2px);
+        }
     }
 }
 
@@ -38,6 +44,6 @@
 @media only screen and (min-width: $md){
     .errorMessage__box{
         margin-top: 7vh;
-        max-width: 40vw;
+        max-width: 30vw;
     }
 }
