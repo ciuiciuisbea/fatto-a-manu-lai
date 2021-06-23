@@ -52,7 +52,7 @@ body#contatto{
 	display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .formulario__campo{
@@ -71,6 +71,8 @@ body#contatto{
 
 .formulario__bottone{
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 	background-color: $azzurro;
 	padding: 5px 10px 5px 10px !important;
     color: $sfondo;
