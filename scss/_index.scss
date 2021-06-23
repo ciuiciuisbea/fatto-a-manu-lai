@@ -1,9 +1,9 @@
 /* Style for the home page */
-#home .frame{
-    min-height: 80vh;
+body#home{
+    min-height: 100vh;
     background-image: url(../img2/cemento_background_home.png);
     background-position: center center;
-    background-size: contain;
+    background-size: 90vh;
     background-repeat: no-repeat;   
 }
 
@@ -18,7 +18,7 @@
     background-color: rgba($talco, .7);
     padding: 20px;
     border-radius: 12px;
-    width: 95vw;
+    width: 90vw;
     h1{
         font-weight: bold;
         color: $azzurro;
@@ -34,7 +34,7 @@
 
 /* Media queries for the home page */
 @media only screen and (min-width:$md){
-    #home .frame{
+    body#home{
         background-position: left bottom;
     }
     #home main{
