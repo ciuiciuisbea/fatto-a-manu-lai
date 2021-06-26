@@ -1,6 +1,5 @@
 /*  General styles  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -192,7 +191,8 @@ body#chiSono {
 body#contatto {
   background-image: url(../img2/vari-vasetti.jpg);
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100vh; }
 
 #contatto h1 {
   display: none; }
@@ -272,12 +272,12 @@ body#contatto {
   .formulario__campo {
     max-width: 50rem; } }
 
-/* Styles for Prodotti and Galleria */
-#prodotti h1, #galleria h1 {
+/* Styles for Materiali */
+#materiali h1, #galleria h1 {
   color: #f2cf62;
   margin-bottom: 20px; }
 
-.prodotti {
+.materiali {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -306,7 +306,7 @@ body#contatto {
     background-color: rgba(87, 89, 91, 0.7);
     height: 10vh;
     line-height: 2.6; }
-  .box .materiali {
+  .box .materiali-testo {
     display: none; }
   .box:hover {
     flex: 1 1 50%;
@@ -328,39 +328,7 @@ body#contatto {
     text-decoration: none;
     color: #f2cf62; }
 
-/* Styles for Galleria */
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-  /* Hidden by default */ }
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block; }
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer; }
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd; }
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white; }
-
+/* Styles for Prodotti */
 .gallery {
   display: grid;
   justify-content: space-evenly;
@@ -378,7 +346,7 @@ body#contatto {
       transform: scale(1.05);
       transition: transform 0.3s; }
 
-/*  Media queries for "Prodotti", "Cemento" and "Riuso"  */
+/*  Media queries for Materiali and Prodotti  */
 @media only screen and (min-width: 576px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -388,10 +356,10 @@ body#contatto {
       max-width: 30vw; } }
 
 @media only screen and (min-width: 768px) {
-  .prodotti {
+  .materiali {
     flex-direction: row;
     justify-content: space-between; }
-  .box:hover .materiali {
+  .box:hover .materiali-testo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,13 +367,12 @@ body#contatto {
     position: absolute;
     top: 0%;
     left: 0%;
-    /*transform: translate(-50%, -50%);*/
     color: #f2f2f2;
     background-color: rgba(87, 89, 91, 0.6);
     text-align: center;
     height: 100%;
     width: 100%; }
-    .box:hover .materiali p {
+    .box:hover .materiali-testo p {
       margin: 10px;
       line-height: 3rem;
       padding: 5px 20px; }
@@ -446,6 +413,8 @@ body#notFound {
   align-items: center;
   border-radius: 12px;
   background-color: rgba(242, 242, 242, 0.7); }
+  .errorMessage__box .errorMessage__title {
+    color: #6493a5; }
   .errorMessage__box .errorMessage__content {
     font-size: 1.8rem;
     text-align: center; }

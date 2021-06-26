@@ -23,6 +23,9 @@ body#notFound{
     align-items: center;
     border-radius: 12px;
     background-color: rgba($sfondo, .7);
+    .errorMessage__title{
+        color: $azzurro;
+    }
     .errorMessage__content{
         font-size: 1.8rem;
         text-align: center;
